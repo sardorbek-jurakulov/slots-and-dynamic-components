@@ -8,7 +8,9 @@
                 <button @click="selectedComponent = 'appRed'" class="btn btn-danger">Load Red Template</button>
                 <hr>
                 <keep-alive>
-                  <component :is="selectedComponent"></component>
+                  <component :is="selectedComponent">
+                    <p>bla bla</p>
+                  </component>
                 </keep-alive>
                 <!-- <app-blue>
                   <h2>Welcome to blue element</h2>
